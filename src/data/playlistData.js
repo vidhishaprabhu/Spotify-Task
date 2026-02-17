@@ -1,6 +1,6 @@
 export const playlistData = {
   id: "1",
-  name: "Top Hits 2026",
+  name: "Top Hit Songs of 2026",
   description: "The hottest tracks right now. Updated daily.",
   image:
     "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800",

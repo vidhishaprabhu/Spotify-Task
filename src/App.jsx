@@ -3,7 +3,7 @@ import { playlistData } from "./data/playlistData";
 import PlaylistHeader from "./components/PlaylistHeader";
 import TrackList from "./components/TrackList";
 import Loader from "./components/Loader";
-// import EmptyState from "./components/EmptyState";
+import Empty from "./components/Empty";
 
 export default function App() {
   const [playlist, setPlaylist] = useState(null);
@@ -18,8 +18,8 @@ export default function App() {
 
   if (loading) return <Loader />;
 
-  // if (!playlist || playlist.tracks.length === 0)
-  //   return <EmptyState />;
+  if (!playlist || playlist.tracks.length === 0)
+    return <Empty/>
 
   return (
     <div className="app">
